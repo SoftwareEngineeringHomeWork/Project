@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/p12"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="编号"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv1"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="姓名"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv2"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="年  级"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv3"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="宿舍地址"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv4"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="专业"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv5"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="学  校"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv6"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="联系电话"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv7"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="短号"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv8"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="QQ号码"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv9"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text="微信号码"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1" >
+        </ListView>
+    </RelativeLayout>
+
+</HorizontalScrollView>

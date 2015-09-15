@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p11"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="50sp"
+            android:checked="true"
+            android:onClick="ershoushu"
+            android:text="二手书"
+            android:textColor="@color/black"
+            android:textSize="50px" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb1"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="10sp"
+            android:checked="true"
+            android:onClick="buyer"
+            android:text="买家"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb2"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="10sp"
+            android:checked="true"
+            android:onClick="seller"
+            android:text="卖家"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="addBooks"
+            android:text="添加二手书"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="deleteBooks"
+            android:text="删除二手书"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb5"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="reviseBooks"
+            android:text="修改二手书"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb6"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="inquiryBooks"
+            android:text="查询二手书"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="addBuyer"
+            android:text="添加买家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="deleteBuyer"
+            android:text="删除买家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb5"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="reviseBuyer"
+            android:text="修改买家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb6"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="inquiryBuyer"
+            android:text="查询买家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="addSeller"
+            android:text="添加卖家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="deleteSeller"
+            android:text="删除卖家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb5"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="reviseSeller"
+            android:text="修改卖家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb6"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb2"
+            android:checked="true"
+            android:onClick="inquirySeller"
+            android:text="查询卖家"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/li2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p10"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="60sp"
+            android:checked="true"
+            android:onClick="buyoutBooks"
+            android:text="收购二手书"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb16"
+            android:layout_marginLeft="100sp"
+            android:checked="true"
+            android:onClick="sellBooks"
+            android:text="出售二手书"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb17"
+            android:layout_marginLeft="100sp"
+            android:checked="true"
+            android:onClick="allowance"
+            android:text="二手书余量"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="addBuyout"
+            android:text="添加收购"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb19"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="deleteBuyout"
+            android:text="删除收购"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb20"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="reviseBuyout"
+            android:text="修改收购"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb21"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="inquiryBuyout"
+            android:text="查询收购"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/tianjia5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="addSellBooks"
+            android:text="添加出售"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb19"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="deleteSellBooks"
+            android:text="删除出售"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb20"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="reviseSellBooks"
+            android:text="修改出售"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb21"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/rb16"
+            android:checked="true"
+            android:onClick="inquirySellBooks"
+            android:text="查询出售"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/li5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p5"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="80sp"
+            android:checked="true"
+            android:onClick="user"
+            android:text="用户查询"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb26"
+            android:layout_marginLeft="100sp"
+            android:checked="true"
+            android:onClick="password"
+            android:text="修改密码"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99f" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/sp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/sp1"
+                    android:layout_alignLeft="@id/sp1"
+                    android:text="年级" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/sp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/sp2"
+                    android:layout_alignLeft="@id/sp2"
+                    android:text="专业" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="560px"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bt_bg"
+            android:text="查询"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/bt1"
+            android:layout_marginTop="10px"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</TabHost>

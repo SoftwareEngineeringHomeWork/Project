@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70sp"
+        android:layout_marginTop="58sp"
+        android:background="@android:color/white"
+        android:text="商 品 名 称："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_toRightOf="@id/tv1"
+        android:entries="@array/gsmc" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp1"
+        android:layout_marginLeft="66sp"
+        android:layout_marginTop="8sp"
+        android:background="@android:color/white"
+        android:text="顾客名称："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp1"
+        android:layout_toRightOf="@id/tv2"
+        android:entries="@array/spmc" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp2"
+        android:layout_marginLeft="130sp"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp2"
+        android:layout_toRightOf="@id/bt1"
+        android:text="取消" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt2"
+        android:layout_centerHorizontal="true"
+        android:text="（以上信息可以选择填写任意项，不填写直接查询默认显示全部信息）"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

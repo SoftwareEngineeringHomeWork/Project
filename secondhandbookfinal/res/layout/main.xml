@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/p4"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180sp"
+        android:hint="请输入用户名"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et1"
+        android:layout_toLeftOf="@id/et1"
+        android:paddingTop="7sp"
+        android:text="用户名:"
+        android:textColor="@android:color/black"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et1"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入密码"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et2"
+        android:layout_toLeftOf="@id/et2"
+        android:paddingTop="6dip"
+        android:text="密    码:"
+        android:textColor="@android:color/black"
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_login"
+        android:onClick="onLoad"
+        android:text="登陆" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="二手书管理"
+        android:textSize="100px" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="produced by 梁皓、柯煜铭、曾科" />
+
+</RelativeLayout>

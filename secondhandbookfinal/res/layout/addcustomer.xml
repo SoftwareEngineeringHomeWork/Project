@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p7"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="买家个人资料："
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="fill_parent"
+        android:layout_height="12sp"
+        android:layout_below="@id/tv1"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_marginTop="8sp"
+        android:text="买家姓名："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_toRightOf="@id/tv2"
+        android:hint="填写买家姓名"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_marginTop="8sp"
+        android:layout_toRightOf="@id/et1"
+        android:text="年       级"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_marginLeft="3sp"
+        android:layout_toRightOf="@id/tv3"
+        android:hint="填写年级      "
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et1"
+        android:layout_marginTop="8sp"
+        android:text="宿舍地址："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et1"
+        android:layout_toRightOf="@id/tv4"
+        android:hint="填写宿舍地址"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et1"
+        android:layout_marginTop="8sp"
+        android:layout_toRightOf="@id/et3"
+        android:text="专业："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et1"
+        android:layout_toRightOf="@id/tv5"
+        android:hint="填写专业名称"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et4"
+        android:layout_marginTop="8sp"
+        android:text="学         校："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et4"
+        android:layout_toRightOf="@id/tv6"
+        android:hint="填写学校名称"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et4"
+        android:layout_marginTop="8sp"
+        android:layout_toRightOf="@id/et5"
+        android:text="电话："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et4"
+        android:layout_toRightOf="@id/tv7"
+        android:hint="填写联系电话"
+        android:phoneNumber="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et6"
+        android:layout_marginTop="8sp"
+        android:text="短     号："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et6"
+        android:layout_toRightOf="@id/tv8"
+        android:hint="填写短号       "
+        android:phoneNumber="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et6"
+        android:layout_marginTop="8sp"
+        android:layout_toRightOf="@id/et7"
+        android:text="Q Q号码："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et6"
+        android:layout_toRightOf="@id/tv9"
+        android:hint="填写QQ号码  "
+        android:phoneNumber="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et8"
+        android:layout_marginTop="8sp"
+        android:text="微信号码  ："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et8"
+        android:layout_toRightOf="@id/tv10"
+        android:hint="填写微信号码  "
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et9"
+        android:layout_marginLeft="150sp"
+        android:text="保存信息" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et9"
+        android:layout_toRightOf="@id/bt1"
+        android:text="返回上一级" />
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="liang.software.engineer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:allowTaskReparenting="true"
+        android:icon="@drawable/p9"
+        android:label="@string/app_name" >
+        <activity
+            android:name="liang.software.engineer.loginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="liang.software.engineer.Menu"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.addSupplier"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.addCustomer"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.inquirySupplier"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.inquiryCustomer"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.inquiryInput"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseInput"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseOutput"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseInputInformation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseOutputInformation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.deleteInput"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.inquiryOutput"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.revisePassword"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.user"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.deleteGoods"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.storage"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseGoods"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseGoodsInformation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseCustomer"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseSupplier"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseCustomerInformation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.reviseSupplierInformation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.inquiryGoods"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.deleteSupplier"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.deleteCustomer"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.deleteOutput"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.addInput"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.addOutput"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.addGoods"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="liang.software.engineer.ClassName"
+            android:label="@string/title_activity_class_name" >
+        </activity>
+    </application>
+
+</manifest>

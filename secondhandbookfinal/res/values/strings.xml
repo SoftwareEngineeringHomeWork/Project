@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, StoreManagementActivity!</string>
+    <string name="app_name">二手书管理</string>
+    <string name="xzgs">选择卖家</string>
+    <string name="xzsp">选择书名</string>
+
+    <string-array name="gsmc">
+        <item>梁皓</item>
+        <item>梁皓</item>
+        <item>梁皓</item>
+        <item>梁皓</item>
+        <item>柯煜铭</item>
+        <item>柯煜铭</item>
+        <item>曾科</item>
+        <item>曾科</item>
+        <item>曾科</item>
+        <item>曾科</item>
+        <item>曾科</item>
+        <item>曾科</item>
+    </string-array>
+    <string-array name="spmc">
+        <item>软件工程</item>
+        <item>软件工程</item>
+        <item>软件工程</item>
+        <item>软件工程</item>
+        <item>软件工程</item>
+    </string-array>
+
+    <string name="title_activity_class_name">ClassName</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
